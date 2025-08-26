@@ -26,7 +26,7 @@ The goal of this repository is to:
 
 - All experiments are personal and educational.
 - Strategies here may not be ready for live trading.
-- Contributions or collaboration ideas are welcome—especially if you want to discuss approaches or share insights.
+- Contributions or collaboration ideas are welcome,especially if you want to discuss approaches or share insights.
 
 ## License
 
