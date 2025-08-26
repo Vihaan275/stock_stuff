@@ -1,0 +1,13 @@
+*.csv
+*.parquet
+*.txt
+
+get_data.py
+
+stock_data/
+small_cap_stock_data/
+micro_caps_stock_data/
+results/
+
+
+

@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+df = pd.read_csv('test.csv')
+
+plt.plot(df['strategy_returns'])
+plt.show()
+
