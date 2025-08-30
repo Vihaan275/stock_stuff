@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from strategies.futures_mean_rev import simple_mean_rev
 from strategies.futures_simple_rolling_avg import simple_rolling_avg
 from strategies.reddit_simple import test_run
+from strategies.republican_strat import repub_years
 
 
 #ES! Daily bars are from yesterday 6pm to today 5pm
@@ -15,13 +16,13 @@ from strategies.reddit_simple import test_run
 
 # Load data
 old_df = pd.read_csv('test.csv')
-spy_data = pd.read_csv('spy_adjusted.csv')
+spy_data = pd.read_csv('data/spy_data.csv')
 
 # Apply strategy function
-df = simple_rolling_avg(old_df)
+df = repub_years(spy_data)
 
 
-type_shi = 'open_to_close_returns'
+type_shi = 'close_to_close_returns'
 
 if type_shi == 'close_to_close_returns':
     df['signal'] = df['signal'].shift(1)
